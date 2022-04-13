@@ -10,13 +10,18 @@
 from datetime import date, time, datetime
 
 def run():
-    nombre = input('Bienvenido al recolector de edades y nombres, ingrese su nombre: ')
-    edad = int(input('Ingrese su edad: '))
-    fecha_actual = 
+    name = input('Please, enter your name: ')
+    age = int(input('Enter your age: '))
+    rest = 100 - age
+    dt = datetime.now()
+    current_year = dt.year
+    hundredth_birthday = current_year + rest
+    message = print(name, ' you will be 100 years old in the year ', str(hundredth_birthday))
+    message
 
-    def cien_años():
-         = edad + 100
-
+    other_number = int(input('Enter antoher number: '))
+    for i in other_number:
+        print(message)
 
 if __name__ == '__main__':
     run()
