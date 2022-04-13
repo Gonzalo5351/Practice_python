@@ -7,7 +7,7 @@
 # 2: Imprima esa cantidad de copias del mensaje anterior en lineas separadas. (Pista: 
 # la cadena "\n" es lo mismo que precionar ENTER)
 
-from datetime import date, time, datetime
+from datetime import datetime
 
 def run():
     name = input('Please, enter your name: ')
@@ -16,12 +16,13 @@ def run():
     dt = datetime.now()
     current_year = dt.year
     hundredth_birthday = current_year + rest
-    message = print(name, ' you will be 100 years old in the year ', str(hundredth_birthday))
-    message
+    print(name, ' you will be 100 years old in the year ', str(hundredth_birthday))
+    
 
-    other_number = int(input('Enter antoher number: '))
+    other_number = range(int(input('Enter antoher number: ')))
     for i in other_number:
-        print(message)
+        i == print(name, ' you will be 100 years old in the year ', str(hundredth_birthday))
+    
 
 if __name__ == '__main__':
     run()
