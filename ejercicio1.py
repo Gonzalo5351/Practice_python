@@ -1,11 +1,15 @@
-# Crea un programa que le pida al usuario que ingrese su nombre y su edad.
-# Imprime un menasje dirigido a ellos que les indique el año en que cumplirán 100 años 
-# 
-# Extras:
-# 1: Agregue al programa anterior pidiéndole al usuario otro número e imprimiendo tantas
-# copias del mensaje anterior. (Pista: El orden de las operaciones existe en Python).
-# 2: Imprima esa cantidad de copias del mensaje anterior en lineas separadas. (Pista: 
-# la cadena "\n" es lo mismo que precionar ENTER)
+# April 14, 2022
+# Hello, I'm Gonzalo and I'm learning to program in Python3.
+
+# Create a program that asks the user to enter their name and age.
+# Prints a message addressed to the user that indicates the year 
+# in which he will be 100 years old
+
+# Additional features:
+# Add to the above program a request to the user for another number, and print the last message that 
+# number of times. (Hint: Order of operations exists in Python.)
+# Print that many copies of the above message on separate lines. (Hint: the string "\n" is the same 
+# as pressing ENTER)
 
 from datetime import datetime
 
