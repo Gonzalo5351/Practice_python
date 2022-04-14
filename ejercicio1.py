@@ -16,10 +16,10 @@ def run():
     dt = datetime.now()
     current_year = dt.year
     hundredth_birthday = current_year + rest
-    print(name, ' you will be 100 years old in the year ', str(hundredth_birthday))
+    print(name, ',', ' you will be 100 years old in the year ', str(hundredth_birthday))
     
 
-    other_number = range(int(input('Enter antoher number: ')))
+    other_number = range(int(input('Enter anotoher number: ')))
     for i in other_number:
         i == print(name, ' you will be 100 years old in the year ', str(hundredth_birthday))
     
