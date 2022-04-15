@@ -15,7 +15,16 @@ def run():
     else:
         print('The number enterd is odd.')
     
-    
+    if num_usr % 4 == 0:
+        print('And it is also a multiple of 4')
+
+    num = int(input('Now please enter a new number: '))
+    check = int(input('Now enter another number different from the last: '))
+
+    if check % num == 0:
+        print(check, ' divides evenly into', num)
+    else:
+        print(check, ' does not divide evenly on ', num)
 
 if __name__ == '__main__':
     run()
