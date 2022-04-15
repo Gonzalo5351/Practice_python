@@ -11,11 +11,12 @@
 def run():
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-#First point of the exercice.
+# First point of the exercice.
+# Second point of the exercice integrated to the first.
+
+# Third point integrated to the second and the first point:
     new_list = []
-    for i in a:
-        if i < 5:
-            new_list.append(i) #Second point of the exercice integrated to the first.            
+    n_list = [new_list.append(i) for i in a if i < 5]
     print(new_list)
 
 if __name__ == '__main__':
