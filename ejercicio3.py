@@ -11,7 +11,6 @@
 def run():
     usr_num = int(input('Please, enter a number between 1 and 89: '))
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-    #new_list = []
     n_list = [i for i in a if i < usr_num]
     print(n_list)
 
