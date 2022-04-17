@@ -12,29 +12,45 @@
 import random
 
 def run():
-    #a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-    #b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-    com = []
-    counter = 0
+    counter_1 = 0
     counter_2 = 0
     l_list = []
     m_list = []
+    finall_list = []
 
-    while counter < 20:
-        l = random.randint(1, 101)
-        l_list.append(l)
-        counter += 1
+    #Función para generar dos listas de diferente tamaño con entereso aleatorios. 
+    def list_generator(choose_counter, count_level, append_list,):
+        while choose_counter < count_level:
+            generator = random.randint(1, 101)
+            append_list.append(generator)
+            choose_counter += 1
 
-    while counter_2 < 30:
-        m = random.randint(1, 101)
-        m_list.append(m)
-        counter_2 += 1
+    #Invocado de la función.
+    list_generator(counter_1, 20, l_list)
+    list_generator(counter_2, 30, m_list)
 
+    #Ciclo que compara ambas listas generadas anteriormente y que filtra los enteros en común en ambas listas. Para luego agregar a estos enteros en una lista final.
     for i in m_list:
-         if i == i in l_list:
-             com.append(i)
+          if i == i in l_list:
+              finall_list.append(i)
 
-    print(com)
+    #Impresión de l_list y m_list para chequear su contenido en relación a finall_list.
+    print(l_list)
+    print(m_list)
+    #Impresión de lista final con enteros en común en l_list y m_list
+    print(finall_list)
+
+    # while counter < 20:
+    #     l = random.randint(1, 101)
+    #     l_list.append(l)
+    #     counter += 1
+
+    # while counter_2 < 30:
+    #     m = random.randint(1, 101)
+    #     m_list.append(m)
+    #     counter_2 += 1
+
+    
 
     #print(l_list)
     #print(m_list)
