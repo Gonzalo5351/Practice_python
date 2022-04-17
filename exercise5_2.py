@@ -19,7 +19,7 @@ def run():
     counter = 0
     l_list = []
 
-    while counter < 21:
+    while counter < 20:
         l = random.randint(1, 101)
         l_list.append(l)
         counter += 1
@@ -30,6 +30,6 @@ def run():
              com.append(i)
     
     print(l_list)
-    
+    print(len(l_list))
 if __name__ == '__main__':
     run()
