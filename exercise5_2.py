@@ -9,25 +9,27 @@
 # 2)Randomly generate two lists to test this
 # 3)Write this in one line of Python (don’t worry if you can’t figure this out at this point - we’ll get to it soon)
 
+from itertools import count
 import random
 
 def run():
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
     com = []
-    ran_1 = []
-    ran_2 = []
+    counter = 0
+    l_list = []
 
-    # for i in b:
-    #      if i == i in a:
-    #          com.append(i)
-    # print(com)
+    while counter < 21:
+        l = random.randint(1, 101)
+        l_list.append(l)
+        counter += 1
 
-    val = random.randint(1, 100)
+
+    for i in b:
+         if i == i in a:
+             com.append(i)
     
-    for i in val:
-        ran_1.append(i)
-    print(ran_1)
-
+    print(l_list)
+    
 if __name__ == '__main__':
     run()
