@@ -6,12 +6,14 @@
     # Functions
 
 
+
 def run():
     a = [5, 10, 15, 20, 25]
     b = []
 
+    # A 'slice' applied to list 'a', the result of wich is appended to list 'b'.
     def first_last(list_1, list_2):
-        list_2.append(list_1[::len(list_1)-1])
+        list_2.append(list_1[::len(list_1)-1]) 
         print(list_2)
     
     first_last(a, b,)
