@@ -20,7 +20,21 @@ def run():
             choose_counter += 1
 
     list_generator(counter_1, 20, l_list)
-    print(l_list)
+    print('L list: ', l_list)
+
+    def remove_duplicate_loop(x):
+        for i in l_list:
+            if i not in m_list:
+                m_list.append(i)
+        print('M list: ', m_list)
+
+    remove_duplicate_loop(l_list)
+
+    print(len(l_list))
+    print(len(m_list))
+            
+
+        
 
     
 
