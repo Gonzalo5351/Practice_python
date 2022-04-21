@@ -7,11 +7,7 @@
 
 def run():
     list_x = []
-    #new_list = []
-    another_number = 9
-    
-    #alto = max(list_x)
-     
+    another_number = 20
 
     def list_generator(init_range, end_range, choose_list):
         r = range(init_range, end_range+1)
@@ -21,28 +17,11 @@ def run():
         for i in choose_list:
             if another_number == i:
                 return True
-
-    def detecting_number_binary(choose_list):
-        bajo = min(choose_list)
-        alto = max(choose_list)
-        respuesta = (alto + bajo) / 2
-        for i in choose_list:
-            if another_number != i:
-                choose_list = respuesta
-            else:
-                return True
-        #             choose_list = choose_list[:len(choose_list) / 2]
-        #             print(choose_list)   
-                #else:
-                #    new_list.append(range(choose_list / 2, choose_list[]))
-
+        return False
 
     list_generator(1, 20, list_x)
     print(list_x)
-    (detecting_number_binary(list_x))
-    #detecting_number_binary(list_x)
-    #print(detecting_number(list_x))
+    print(detecting_number(list_x))
     
-
 if __name__ == '__main__':
     run()
