@@ -7,7 +7,7 @@
 
 def run():
     list_x = []
-    another_number = 9
+    another_number = 20
 
     def list_generator(init_range, end_range, choose_list):
         r = range(init_range, end_range+1)
@@ -17,11 +17,11 @@ def run():
         for i in choose_list:
             if another_number == i:
                 return True
+        return False
 
-    list_generator(1, 100, list_x)
+    list_generator(1, 20, list_x)
     print(list_x)
     print(detecting_number(list_x))
     
-
 if __name__ == '__main__':
     run()
